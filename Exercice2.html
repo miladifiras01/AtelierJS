@@ -7,23 +7,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercice2</title>
     <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.css">
+    <style>
+        .center {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
 </head>
 
 <body>
-    <div id="test"> Test </div>
-    <div class="form-control">
-        <input type="color" id="text">
-        <input type="number" id="number">
-        <select name="police" id="police">
-            <option value="Arial">Arial</option>
-            <option value="Calibri ">Calibri</option>
-            <option value="Calibri Light">Calibri Light</option>
-            <option value="Verdana">Verdana</option>
-            <option value="Helvetica">Helvetica</option>
-            <option value="Tahoma">Tahoma</option>
-            <option value="Trebuchet">Trebuchet MS</option>
-            <option value="Georgia">Georgia</option>
-        </select>
+    <div class="center">
+        <div class="container">
+
+            <div class="card ">
+                <div id="test"> Test </div>
+                <div class="row">
+                    <div class="col-4"><input type="color" id="text" class="form-control form-control-color"
+                            style="width:100%"></div>
+                    <div class="col-4"><input type="number" id="number" class="form-control"></div>
+                    <div class="col-4"><select name="police" id="police" class="form-control form-select">
+                            <option value="Arial">Arial</option>
+                            <option value="Calibri ">Calibri</option>
+                            <option value="Calibri Light">Calibri Light</option>
+                            <option value="Verdana">Verdana</option>
+                            <option value="Helvetica">Helvetica</option>
+                            <option value="Tahoma">Tahoma</option>
+                            <option value="Trebuchet">Trebuchet MS</option>
+                            <option value="Georgia">Georgia</option>
+                        </select></div>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="Exercice2.js"></script>
 </body>
